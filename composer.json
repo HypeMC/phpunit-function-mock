@@ -1,0 +1,55 @@
+{
+    "name": "bizkit/phpunit-function-mock",
+    "description": "Provides a small PHPUnit extension for mocking native PHP functions from tests.",
+    "type": "library",
+    "keywords": [
+        "phpunit",
+        "phpunit extension",
+        "testing",
+        "mock",
+        "mock functions",
+        "monkey patching"
+    ],
+    "homepage": "https://github.com/HypeMC/phpunit-function-mock",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "HypeMC",
+            "email": "hypemc@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bizkit\\PHPUnitFunctionMock\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bizkit\\PHPUnitFunctionMock\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "phpunit/phpunit": "^10.5 || ^11.5 || ^12.5 || ^13"
+    },
+    "conflict": {
+        "phpunit/phpunit": "<10.5.27"
+    },
+    "scripts": {
+        "run-tests": [
+            "phpunit",
+            "phpunit -c phpunit-functional.dist.xml"
+        ],
+        "run-checks": [
+            "php-cs-fixer fix -vvv",
+            "@run-tests",
+            "phpstan analyse"
+        ]
+    },
+    "config": {
+        "audit": {
+            "block-insecure": false
+        },
+        "sort-packages": true
+    }
+}

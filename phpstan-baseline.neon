@@ -1,0 +1,25 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to function is_string\(\) with callable\-string will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Attribute/RegisterFunctionMock.php
+
+		-
+			message: '#^Parameter \#3 \$length of function substr expects int\|null, int\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/FunctionMock.php
+
+		-
+			message: '#^Trying to invoke non\-falsy\-string but it might not be a callable\.$#'
+			identifier: callable.nonCallable
+			count: 1
+			path: src/FunctionMock.php
+
+		-
+			message: '#^Call to function method_exists\(\) with PHPUnit\\Event\\Test\\BeforeTestMethodErrored and ''test'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/PHPUnitExtension.php
