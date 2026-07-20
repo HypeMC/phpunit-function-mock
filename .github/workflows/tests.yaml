@@ -3,6 +3,7 @@ name: Tests
 on:
     push:
     pull_request:
+        branches: [ '*.x' ]
     workflow_dispatch:
     schedule:
         -   cron: '0 8 * * *'
