@@ -1,7 +1,7 @@
 # Bizkit PHPUnit Function Mock
 
 [![Latest Stable Version](https://poser.pugx.org/bizkit/phpunit-function-mock/v/stable)](https://packagist.org/packages/bizkit/phpunit-function-mock)
-[![Build Status](https://github.com/HypeMC/phpunit-function-mock/workflows/Tests/badge.svg)](https://github.com/HypeMC/phpunit-function-mock/actions)
+[![Build Status](https://github.com/HypeMC/phpunit-function-mock/actions/workflows/tests.yaml/badge.svg?branch=1.x)](https://github.com/HypeMC/phpunit-function-mock/actions/workflows/tests.yaml)
 [![Code Coverage](https://codecov.io/gh/HypeMC/phpunit-function-mock/branch/1.x/graph/badge.svg)](https://codecov.io/gh/HypeMC/phpunit-function-mock)
 [![License](https://poser.pugx.org/bizkit/phpunit-function-mock/license)](https://packagist.org/packages/bizkit/phpunit-function-mock)
 
